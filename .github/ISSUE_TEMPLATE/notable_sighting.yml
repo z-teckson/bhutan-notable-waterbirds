@@ -1,0 +1,62 @@
+---
+name: Notable Waterbird Sighting
+description: Submit a notable, rare, or first-record waterbird sighting for verification
+title: "[Sighting]: "
+labels: ["status:pending-review"]
+assignees:
+  - z-teckson
+body:
+  - type: input
+    id: date
+    attributes:
+      label: Date of Sighting
+      description: "Format: YYYY-MM-DD"
+      placeholder: "2025-12-30"
+    validations:
+      required: true
+  - type: input
+    id: common_name
+    attributes:
+      label: Common Name
+      placeholder: "Ferruginous Pochard"
+    validations:
+      required: true
+  - type: input
+    id: scientific_name
+    attributes:
+      label: Scientific Name
+      placeholder: "Aythya nyroca"
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: "Specific location (e.g., Bumthang Valley, near Chokhor Valley)"
+      placeholder: "Punakha Dzongkhag, near Pho Chhu River"
+    validations:
+      required: true
+  - type: input
+    id: observer_name
+    attributes:
+      label: Observer Name(s)
+      placeholder: "Your name or team name"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: "Links to photos, audio recordings, or detailed field notes. If multiple, separate with commas."
+      placeholder: "https://example.com/photo.jpg"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: "Any extra information about the sighting (e.g., behavior, plumage, count, habitat)"
+      placeholder: "First official record for Bhutan. Adult male in breeding plumage."
+    validations:
+      required: false
+---
